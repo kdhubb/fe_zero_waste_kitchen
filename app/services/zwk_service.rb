@@ -3,7 +3,7 @@ class ZwkService
     if ENV["docker_backend"] == nil
       "http://localhost:5000"
     else
-      ENV["docker_backend"]
+      "http://#{ENV["docker_backend"]}"
     end
   end
 
